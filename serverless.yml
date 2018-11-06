@@ -14,4 +14,9 @@ functions:
       - http:
           path: echo/hello
           method: get
-
+  image_resize:
+    handler: handler.resize_image
+    events:
+      - http:
+          path: resize-image
+          method: get
