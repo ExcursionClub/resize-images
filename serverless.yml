@@ -17,6 +17,9 @@ functions:
   image_resize:
     handler: handler.resize_image
     events:
-      - http:
-          path: resize-image
-          method: get
+      - s3:
+        bucket: exc-photos
+        event: s3:ObjectCreated:*
+        rules:
+          - prefix: media/
+          - suffix: .jpg

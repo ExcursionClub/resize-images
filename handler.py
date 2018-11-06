@@ -12,13 +12,4 @@ def hello(event, context):
 
 
 def resize_image(event, context):
-    try:
-        return {
-            'statusCode': 200,
-            'body': "Image re-sized!"
-        }
-    except Exception as e:
-        return {
-            'statusCode': 500,
-            'body': str(e)
-        }
+    print('Image re-sized!')
