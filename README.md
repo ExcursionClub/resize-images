@@ -10,5 +10,5 @@ Since CloudFormation is doing a lot it needs a lot of permissions.
 
 ## Deploy function as dev
 ```
-sls deploy --stage dev
+sls deploy --stage dev && sls s3deploy
 ```

@@ -1,4 +1,4 @@
-def hello(event, context):
+def handle_hello(event, context):
     try:
         return {
             'statusCode': 200,
@@ -11,5 +11,5 @@ def hello(event, context):
         }
 
 
-def resize_image(event, context):
-    print('Image re-sized!')
+def handle_resize_image(event, context):
+    print('handle_resize called')

@@ -6,20 +6,30 @@ provider:
   versonFunctions: false
   memorySize: 128
   region: us-west-1
+  iamRoleStatements:
+  - Effect: "Allow"
+    Action:
+      "s3:*"
+    Resource:
+      Fn::Join:
+      - ""
+      - - "arn:aws:s3:::*"
 
 functions:
   hello:
-    handler: handler.hello
+    handler: handler.handle_hello
     events:
       - http:
           path: echo/hello
           method: get
   image_resize:
-    handler: handler.resize_image
+    handler: handler.handle_resize_image
     events:
-      - s3:
-        bucket: exc-photos
-        event: s3:ObjectCreated:*
-        rules:
-          - prefix: media/
-          - suffix: .jpg
+      - existingS3:
+          bucket: exc-photos
+          events:
+            - s3:ObjectCreated:*
+
+plugins:
+  - serverless-python-requirements
+  - serverless-plugin-existing-s3

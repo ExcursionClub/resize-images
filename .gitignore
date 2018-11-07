@@ -22,3 +22,5 @@ var/
 # Pycharm
 .idea/
 
+# Pyenv
+.python-version
