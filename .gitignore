@@ -24,3 +24,6 @@ var/
 
 # Pyenv
 .python-version
+
+# Because of Serverless plugins
+node_modules/

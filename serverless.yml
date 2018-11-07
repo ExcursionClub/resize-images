@@ -4,7 +4,7 @@ provider:
   name: aws
   runtime: python3.6
   versonFunctions: false
-  memorySize: 128
+  memorySize: 256
   region: us-west-1
   iamRoleStatements:
   - Effect: "Allow"
@@ -29,6 +29,9 @@ functions:
           bucket: exc-photos
           events:
             - s3:ObjectCreated:*
+          rules:
+            - prefix: uploads/
+            - suffix: .jpg
 
 plugins:
   - serverless-python-requirements
