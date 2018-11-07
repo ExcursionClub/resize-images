@@ -16,12 +16,6 @@ provider:
       - - "arn:aws:s3:::*"
 
 functions:
-  hello:
-    handler: handler.handle_hello
-    events:
-      - http:
-          path: echo/hello
-          method: get
   image_resize:
     handler: handler.handle_resize_image
     events:
