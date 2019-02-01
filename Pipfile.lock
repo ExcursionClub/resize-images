@@ -26,10 +26,10 @@
         },
         "botocore": {
             "hashes": [
-                "sha256:d6fa29f28899892f77014c19afa40ec1b87ef1e57b15c7eac582e8d48eddf32d",
-                "sha256:e5bcea66a1ffad9b2e1ff2935a31455c76f689e00b924e9920cb012b177fbe35"
+                "sha256:24444e7580f0114c3e9fff5d2032c6f0cfbf88691b1be3ba27c6922507a902ec",
+                "sha256:5b01a16f02c3da55068b3aacfa1c37dd8e17141551e1702424b38dd21fa1c792"
             ],
-            "version": "==1.12.71"
+            "version": "==1.12.86"
         },
         "docutils": {
             "hashes": [
@@ -78,11 +78,11 @@
         },
         "wand": {
             "hashes": [
-                "sha256:2d64f3d63f5fae997938451f77efad80ad47cd86d871fb758a4a7cc691be00c5",
-                "sha256:b40a2215545e8c7193b3fccd6e7251dc556ec9b878a4f67d992b056ff396bc65"
+                "sha256:3e59e4bda9ef9d643d90e881cc950c8eee1508ec2cde1c150a1cbd5a12c1c007",
+                "sha256:52763dbf65d00cf98d7bc910b49329eea15896249c5555d47e169f2b6efbe166"
             ],
             "index": "pypi",
-            "version": "==0.4.5"
+            "version": "==0.5.0"
         }
     },
     "develop": {}
