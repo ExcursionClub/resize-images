@@ -78,11 +78,11 @@
         },
         "wand": {
             "hashes": [
-                "sha256:3e59e4bda9ef9d643d90e881cc950c8eee1508ec2cde1c150a1cbd5a12c1c007",
-                "sha256:52763dbf65d00cf98d7bc910b49329eea15896249c5555d47e169f2b6efbe166"
+                "sha256:c52d647a34205f9b3948baae739db461a7379a04818548fe8042b5ce751ea6ea",
+                "sha256:e2e08e19a37c61e85eaa307fe319889af46fe4cac6c23e3ae668b96be3e497ff"
             ],
             "index": "pypi",
-            "version": "==0.5.0"
+            "version": "==0.5.4"
         }
     },
     "develop": {}
